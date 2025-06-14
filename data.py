@@ -29,7 +29,7 @@ def download_geojson_files():
     # Format: source_filename: {"download": True/False, "directory": "path", "save_as": "filename"}
     geojson_files = {
         # COASTLINE FILES - High Priority
-        "ne_10m_coastline.geojson": {"download": True, "directory": "feautures/coastlines", "save_as": "coastline_10m.geojson"},
+        "ne_10m_coastline.geojson": {"download": True, "directory": "features/coastlines", "save_as": "coastline_10m.geojson"},
         "ne_10m_minor_islands_coastline.geojson": {"download": True, "directory": "features/coastlines", "save_as": "coastline_island_10m.geojson", "should_overwrite": False},
         
         # LAND/OCEAN FILES - High Priority  
@@ -42,7 +42,7 @@ def download_geojson_files():
         
         # ADMIN/POLITICAL FILES
         "ne_10m_admin_0_countries.geojson": {"download": True, "directory": "features/admin/countries", "save_as": "admin_0.geojson"},
-        "ne_10m_admin_0_countries_lakes.geojson": {"download": True, "directory": "features/admin/countries", "save_as": "admin_0_lakes.geoson"},
+        "ne_10m_admin_0_countries_lakes.geojson": {"download": True, "directory": "features/admin/countries", "save_as": "admin_0_lakes.geojson"},
         "ne_10m_admin_0_boundary_lines_land.geojson": {"download": True, "directory": "features/admin/boundaries", "save_as": "admin_0_lines.geojson"},
         "ne_10m_admin_1_states_provinces.geojson": {"download": False, "directory": "features/admin/states_provinces", "save_as": "admin_1.geojson"},
         "ne_10m_admin_1_states_provinces_lakes.geojson": {"download": True, "directory": "features/admin/states_provinces", "save_as": "admin_1_lakes.geojson"},
